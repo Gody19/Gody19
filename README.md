@@ -107,7 +107,7 @@
 
 <!-- ANIMATED CONTRIBUTION GRAPH -->
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gody19&theme=react-dark&hide_border=true&radius=16" />
+  <img src="https://raw.githubusercontent.com/Gody19/Gody19/output/github-readme-activity-graph.svg" />
 </p>
 
 <!-- DIVIDER -->

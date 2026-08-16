@@ -1,0 +1,39 @@
+name: Generate animated contribution graph
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # daily at 00:00 UTC
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch and patch contribution graph SVG
+        run: |
+          mkdir -p dist
+          curl -sSf --retry 5 --retry-all-errors --retry-delay 5 \
+            -o dist/github-readme-activity-graph.svg \
+            "https://github-readme-activity-graph.vercel.app/graph?username=Gody19&theme=react-dark&hide_border=true&radius=16"
+          python3 - <<'PY'
+          import re
+          p = 'dist/github-readme-activity-graph.svg'
+          s = open(p, encoding='utf-8').read()
+          s = re.sub(r'animation:\s*dash\s+5s\s+ease-in-out\s+forwards;',
+                     'animation: dash 5s ease-in-out infinite;', s)
+          open(p, 'w', encoding='utf-8').write(s)
+          print('patched animation: infinite')
+          PY
+
+      - name: Push graph to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
