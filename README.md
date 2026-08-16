@@ -5,7 +5,7 @@
 
 <!-- ANIMATED MAIN TITLE - GODY+OUWA then FULL+STACK+DEV (one after another) -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Righteous&size=45&duration=3000&pause=1000&color=00FF88&center=true&vCenter=true&width=700&height=80&lines=GODY+OUWA;FULL+STACK+DEV" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=45&duration=3000&pause=1000&color=00FF88&center=true&vCenter=true&width=700&height=80&lines=GODY+OUWA;FULL+STACK+DEV" />
 </p>
 
 <!-- PROFILE INFO -->
@@ -15,12 +15,12 @@
 
 <!-- ANIMATED ROLE WORDS -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2000&pause=800&color=00FF88&center=true&vCenter=true&width=600&height=50&lines=Fullstack+Developer;Web+Developer;Backend+Developer;PHP+%2F+Laravel+Developer;Python+%2F+Django+Developer;API+%26+Database+Designer" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=2000&pause=800&color=00FF88&center=true&vCenter=true&width=600&height=50&lines=Fullstack+Developer;Web+Developer;Backend+Developer;PHP+%2F+Laravel+Developer;Python+%2F+Django+Developer;API+%26+Database+Designer" />
 </p>
 
-<!-- DIVIDER (WORKING RAINBOW GIF) -->
+<!-- DIVIDER -->
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 </p>
 
 <!-- BIO -->
@@ -34,9 +34,9 @@
   My interests include <strong>backend development, database design, REST APIs, fintech systems, microfinance solutions, and AI-powered applications.</strong>
 </p>
 
-<!-- DIVIDER (WORKING RAINBOW GIF) -->
+<!-- DIVIDER -->
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 </p>
 
 <!-- CORE STACK ARCHITECTURE -->
@@ -95,9 +95,9 @@
   </table>
 </p>
 
-<!-- DIVIDER (WORKING RAINBOW GIF) -->
+<!-- DIVIDER -->
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 </p>
 
 <!-- TOP LANGUAGES -->
@@ -110,9 +110,9 @@
   <img src="https://raw.githubusercontent.com/Gody19/Gody19/output/github-contribution-grid-snake-dark.svg" />
 </p>
 
-<!-- DIVIDER (WORKING RAINBOW GIF) -->
+<!-- DIVIDER -->
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 </p>
 
 <!-- FOOTER BANNER -->
