@@ -3,9 +3,9 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00d4ff,100:0066ff&height=120&section=header"/>
 </p>
 
-<!-- ANIMATED MAIN TITLE - GODY+OUWA then FULL+STACK+DEV (one after another) -->
+<!-- MAIN TITLE -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Righteous&size=45&duration=3000&pause=1000&color=00FF88&center=true&vCenter=true&width=700&height=80&lines=GODY+OUWA;FULL+STACK+DEV" />
+  <font size="+3">GODY OUWA</font>
 </p>
 
 <!-- PROFILE INFO -->
