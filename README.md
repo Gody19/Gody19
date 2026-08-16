@@ -5,7 +5,7 @@
 
 <!-- ANIMATED MAIN TITLE - GODY+OUWA then FULL+STACK+DEV (one after another) -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=45&duration=3000&pause=1000&color=00FF88&center=true&vCenter=true&width=700&height=80&lines=GODY+OUWA;FULL+STACK+DEV" />
+  <img src="https://readme-typing-svg.demolab.com?font=Righteous&size=45&duration=3000&pause=1000&color=00FF88&center=true&vCenter=true&width=700&height=80&lines=GODY+OUWA;FULL+STACK+DEV" />
 </p>
 
 <!-- PROFILE INFO -->
@@ -15,7 +15,7 @@
 
 <!-- ANIMATED ROLE WORDS -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=2000&pause=800&color=00FF88&center=true&vCenter=true&width=600&height=50&lines=Fullstack+Developer;Web+Developer;Backend+Developer;PHP+%2F+Laravel+Developer;Python+%2F+Django+Developer;API+%26+Database+Designer" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2000&pause=800&color=00FF88&center=true&vCenter=true&width=600&height=50&lines=Fullstack+Developer;Web+Developer;Backend+Developer;PHP+%2F+Laravel+Developer;Python+%2F+Django+Developer;API+%26+Database+Designer" />
 </p>
 
 <!-- DIVIDER -->
