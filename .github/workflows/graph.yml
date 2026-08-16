@@ -33,7 +33,8 @@ jobs:
       - name: Generate top languages card
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 - <<'PY'
+        run: |
+          python3 - <<'PY'
           import json, os, html, urllib.request
 
           GH = "https://api.github.com"
