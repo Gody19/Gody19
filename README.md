@@ -124,3 +124,5 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Gody19&label=PROFILE+VIEWS&color=00ff88&style=for-the-badge" />
 </p>
+
+<!-- PROFILE REFRESH TRIGGER -->
