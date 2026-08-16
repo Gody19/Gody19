@@ -102,7 +102,7 @@
 
 <!-- TOP LANGUAGES -->
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gody19&layout=compact&theme=radical&hide_border=true&bg_color=0a0a0a&title_color=00ff88" />
+  <img width="48%" src="https://raw.githubusercontent.com/Gody19/Gody19/output/top-langs.svg" />
 </p>
 
 <!-- ANIMATED CONTRIBUTION GRAPH -->
