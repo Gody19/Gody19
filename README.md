@@ -5,7 +5,8 @@
 
 <!-- MAIN TITLE -->
 <p align="center">
-  <font size="+3">GODY OUWA</font>
+  <font size="10" color="#00ff88"><b>GODY</b></font>
+  <font size="10" color="#00d4ff"><b>OUWA</b></font>
 </p>
 
 <!-- PROFILE INFO -->
