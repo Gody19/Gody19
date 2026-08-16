@@ -4,10 +4,14 @@ permissions:
   contents: write
 
 on:
-  push: {}
   schedule:
-    - cron: '0 0 * * *' # run daily at 00:00 UTC
+    - cron: '0 0 * * *' # daily at 00:00 UTC
   workflow_dispatch: {}
+
+env:
+  USERNAME: Gody19
+  AUTHOR_NAME: Gody19
+  AUTHOR_EMAIL: gody12919@gmail.com   # <-- your email as provided
 
 jobs:
   build:
@@ -25,22 +29,20 @@ jobs:
         run: mkdir -p output
 
       - name: Generate contribution snake SVG
-        env:
-          USERNAME: Gody19
         run: |
           set -e
           echo "Generating contribution snake SVG for $USERNAME"
-          # Use npx so no global install required. Try common CLI variants.
+          # Try common invocations of the popular generator using npx
           npx github-contribution-grid-snake --username "$USERNAME" --output ./output/github-contribution-grid-snake-dark.svg --theme dark || \
           npx github-contribution-grid-snake --user "$USERNAME" --output ./output/github-contribution-grid-snake-dark.svg --theme dark || \
           npx github-contribution-grid-snake "$USERNAME" --output ./output/github-contribution-grid-snake-dark.svg --theme dark || \
           { echo "All generator invocations failed. Please check the package name or CLI options."; exit 1; }
 
-      - name: Commit and push changes
+      - name: Commit and push changes (authored as you)
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: github-actions
-          author_email: action@github.com
+          author_name: ${{ env.AUTHOR_NAME }}
+          author_email: ${{ env.AUTHOR_EMAIL }}
           message: 'chore(workflow): update contribution snake'
           add: 'output/github-contribution-grid-snake-dark.svg'
           push: true
