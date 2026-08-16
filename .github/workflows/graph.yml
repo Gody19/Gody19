@@ -100,6 +100,24 @@ jobs:
           print("top-langs:", dict(top))
           PY
 
+      - name: Generate main title image
+        run: |
+          python3 - <<'PY'
+          W, H = 640, 120
+          out = []
+          out.append('<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d">' % (W, H, W, H))
+          out.append('<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0">')
+          out.append('<stop offset="0%%" stop-color="#00ff88"/>')
+          out.append('<stop offset="100%%" stop-color="#00d4ff"/>')
+          out.append('</linearGradient></defs>')
+          out.append('<text x="%d" y="%d" text-anchor="middle" dominant-baseline="central" '
+                     'font-family="Verdana, Segoe UI, Arial, sans-serif" font-weight="bold" '
+                     'font-size="78" fill="url(#g)">GODY OUWA</text>' % (W // 2, H // 2))
+          out.append('</svg>')
+          open("dist/title.svg", "w", encoding="utf-8").write("\n".join(out))
+          print("title.svg generated")
+          PY
+
       - name: Push images to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:

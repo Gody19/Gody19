@@ -5,8 +5,7 @@
 
 <!-- MAIN TITLE -->
 <p align="center">
-  <font size="10" color="#00ff88"><b>GODY</b></font>
-  <font size="10" color="#00d4ff"><b>OUWA</b></font>
+  <img src="https://raw.githubusercontent.com/Gody19/Gody19/output/title.svg" />
 </p>
 
 <!-- PROFILE INFO -->
