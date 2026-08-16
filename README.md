@@ -105,9 +105,9 @@
   <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gody19&layout=compact&theme=radical&hide_border=true&bg_color=0a0a0a&title_color=00ff88" />
 </p>
 
-<!-- SNAKE GAME ANIMATION - LIVE CONTRIBUTION VISUALIZATION -->
+<!-- ANIMATED CONTRIBUTION GRAPH -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Gody19/Gody19/output/github-contribution-grid-snake-dark.svg" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gody19&theme=react-dark&hide_border=true&radius=16" />
 </p>
 
 <!-- DIVIDER -->
