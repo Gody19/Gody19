@@ -5,7 +5,7 @@
 
 <!-- MAIN TITLE -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Gody19/Gody19/output/title.svg" />
+  <img src="https://raw.githubusercontent.com/Gody19/Gody19/output/title.svg?v=2" />
 </p>
 
 <!-- PROFILE INFO -->
