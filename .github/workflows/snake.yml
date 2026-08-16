@@ -1,0 +1,46 @@
+name: Generate contribution snake
+
+permissions:
+  contents: write
+
+on:
+  push: {}
+  schedule:
+    - cron: '0 0 * * *' # run daily at 00:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Ensure output directory
+        run: mkdir -p output
+
+      - name: Generate contribution snake SVG
+        env:
+          USERNAME: Gody19
+        run: |
+          set -e
+          echo "Generating contribution snake SVG for $USERNAME"
+          # Use npx so no global install required. Try common CLI variants.
+          npx github-contribution-grid-snake --username "$USERNAME" --output ./output/github-contribution-grid-snake-dark.svg --theme dark || \
+          npx github-contribution-grid-snake --user "$USERNAME" --output ./output/github-contribution-grid-snake-dark.svg --theme dark || \
+          npx github-contribution-grid-snake "$USERNAME" --output ./output/github-contribution-grid-snake-dark.svg --theme dark || \
+          { echo "All generator invocations failed. Please check the package name or CLI options."; exit 1; }
+
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: github-actions
+          author_email: action@github.com
+          message: 'chore(workflow): update contribution snake'
+          add: 'output/github-contribution-grid-snake-dark.svg'
+          push: true
