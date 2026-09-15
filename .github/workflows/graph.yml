@@ -17,18 +17,22 @@ jobs:
       - name: Fetch and patch contribution graph
         run: |
           mkdir -p dist
-          curl -sSf --retry 5 --retry-all-errors --retry-delay 5 \
+          if curl -sSf --retry 5 --retry-all-errors --retry-delay 5 \
             -o dist/github-readme-activity-graph.svg \
-            "https://github-readme-activity-graph.vercel.app/graph?username=Gody19&theme=react-dark&hide_border=true&radius=16"
-          python3 - <<'PY'
-          import re
-          p = 'dist/github-readme-activity-graph.svg'
-          s = open(p, encoding='utf-8').read()
-          s = re.sub(r'animation:\s*dash\s+5s\s+ease-in-out\s+forwards;',
-                     'animation: dash 5s ease-in-out infinite;', s)
-          open(p, 'w', encoding='utf-8').write(s)
-          print('patched animation: infinite')
-          PY
+            "https://github-readme-activity-graph.vercel.app/graph?username=Gody19&theme=react-dark&hide_border=true&radius=16"; then
+            python3 - <<'PY'
+            import re
+            p = 'dist/github-readme-activity-graph.svg'
+            s = open(p, encoding='utf-8').read()
+            s = re.sub(r'animation:\s*dash\s+5s\s+ease-in-out\s+forwards;',
+                       'animation: dash 5s ease-in-out infinite;', s)
+            open(p, 'w', encoding='utf-8').write(s)
+            print('patched animation: infinite')
+            PY
+          else
+            echo "Warning: Failed to fetch activity graph (HTTP 402), skipping graph generation"
+            touch dist/github-readme-activity-graph.svg
+          fi
 
       - name: Generate top languages card
         env:
